@@ -38,6 +38,7 @@ if (form) {
     const tglLahir = document.getElementById('input-birthdate').value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const email = document.getElementById('input-email').value;
+    const phone = document.getElementById('input-phone').value;
     const pesan = document.getElementById('input-message').value;
     const waktu = new Date().toLocaleString();
     document.getElementById('output-time').innerText = waktu;
@@ -45,6 +46,7 @@ if (form) {
     document.getElementById('output-birthdate').innerText = tglLahir;
     document.getElementById('output-gender').innerText = gender;
     document.getElementById('output-email').innerText = email;
+    document.getElementById('output-phone').innerText = phone;  
     document.getElementById('output-message').innerText = pesan;
 
     alert('Terima kasih telah mengirim pesan, ' + nama + '! Pesan Anda telah diterima pada ' + waktu + '.');

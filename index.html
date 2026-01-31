@@ -129,6 +129,11 @@
                         </div>
 
                         <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-200">No. HP</label>
+                            <input type="tel" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9]/g, '');" id="input-phone" placeholder="Nomor HP Anda" required class="w-full mt-1 p-2 border rounded-md focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-white outline-none">
+                        </div>
+
+                        <div>
                             <label class="block text-sm font-medium text-gray-700 dark:text-gray-200">Pesan</label>
                             <textarea id="input-message" rows="4" placeholder="Tulis pesan anda disini" required class="w-full mt-1 p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-green-500 outline-none"></textarea>
                         </div>
@@ -147,6 +152,7 @@
                         <p><strong>Tanggal Lahir:</strong> <span id="output-birthdate">-</span></p>
                         <p><strong>Gender:</strong> <span id="output-gender">-</span></p>
                         <p><strong>Email:</strong> <span id="output-email">-</span></p>
+                        <p><strong>No. HP:</strong> <span id="output-phone">-</span></p>
                         <p><strong>Pesan:</strong></p>
                         <p id="output-message" class="not-italic bg-white dark:bg-gray-700 p-3 rounded border dark:border-gray-600 shadow-sm text-gray-800 dark:text-white">Belum ada pesan</p>
                     </div>
