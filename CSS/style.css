@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+* {
+    transition-property: background-color, border-color, border-color, color;
+    transition-duration: 300ms;
+}

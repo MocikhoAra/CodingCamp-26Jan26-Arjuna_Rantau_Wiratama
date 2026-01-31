@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belum tahu</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+        @layer base {
+            * {
+                @apply transition-colors duration-300;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="p-4 border-b sticky top-0 z-50 bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 dark:border-gray-700 dark:text-white">
+        <section>
+            <nav class="flex justify-between items-center max-w-6xl mx-auto">
+
+                <div class="flex items-center gap-4">
+                    <h1 class="text-3xl font-bold">Belum tahu</h1>
+                    <img src="assets/photo/profile-mocikhoara-belumtahu.png" alt="Logo" class="h-15 w-15">
+                </div>
+
+                <div class="relative">
+                    <ul class="flex space-x-8 font-medium dark:bg-gray-700 dark:text-white">
+                        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                        <li><a href="#ourprofile" class="hover:text-blue-500">Our Profile</a></li>
+                        <li><a href="#portofolio" class="hover:text-blue-500">Portfolio</a></li>
+                        <li><a href="#messageus" class="hover:text-blue-500">Message Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <button id="dark-mode-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <span id="sun-icon" class="hidden">☀️</span>
+                        <span id="moon-icon">🌙</span>
+                    </button>
+                </div>
+
+            </nav>
+        </section>
+    </header>
+    
+    <main class="dark:bg-gray-900">
+
+        <section id="home" class="py-20 px-4 text-center bg-gray-50 dark:bg-gray-800 dark:text-white min-h-[60vh] flex flex-col justify-center items-center">
+            <h2 class="text-4xl font-extrabold mb-6">
+                Hi <span id="user-name" class="text-green-600">Guest</span>, Welcome to Website Belum tahu!
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Ini adalah website portofolio pertama saya buat untuk assignment RevoU software engineering CodingCamp yg dibuat dengan HTML, CSS Tailwind, CSS, dan JavaScript. Website ini ditujukan untuk mendemonstrasikan kemampuan saya dalam membuat website portofolio sederhana.
+            </p>
+        </section>
+
+        <section id="ourprofile" class="py-20 px-4 bg-white dark:bg-gray-900 dark:text-white min-h-[60vh] flex flex-col justify-center items-center">
+            <h2 class="text-3xl font-extrabold mb-6">Our Profile</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed text-center">
+                Belum Tahu lahir dari sebuah ketidaksengajaan saat saya bingung mencari nama untuk server Discord yang awalnya hanya untuk tempat ngobrol penonton YouTube MocikhoAra. Kini, saya mengembangkan server ini menjadi komunitas publik yang lebih luas—sebuah tempat dimana semua orang bisa membagikan proyek open-source yang aman, netral, dan terbuka untuk siapa saja.
+            </p>
+        </section>
+
+        <section id="portofolio" class="py-20 px-4 bg-gray-50 dark:bg-gray-800 dark:text-white min-h-[60vh] flex flex-col justify-center items-center">
+            <h2 class="text-3xl font-extrabold mb-6">Portfolio</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed text-center">
+                Projek yang sedang dikerjakan:
+            </p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl w-full">
+
+                <div class="p-6 border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600 shadow hover:border-green-500 transition">
+                    <h3 class="text-xl font-semibold">Proyek official Bot Discord Belum tahu</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2">Sebuah bot Discord yang dibuat dengan Node.js untuk mengelola server Discord Belum tahu dalam hal moderation, ticket, & sapaan.</p>
+                </div>
+
+                <div class="p-6 border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600 shadow flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold text-center">Coming Soon</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Coming Soon.</p>
+                </div>
+
+                <div class="p-6 border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600 shadow flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold text-center">Coming Soon</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Coming Soon.</p>
+                </div>
+
+                <div class="p-6 border rounded-lg bg-white dark:bg-gray-700 dark:border-gray-600 shadow flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold text-center">Coming Soon</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mt-2 text-center">Coming Soon.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="messageus" class="py-20 px-4 bg-white dark:bg-gray-900 dark:text-white min-h-[60vh] flex flex-col justify-center items-center">
+            <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <div class="p-8 border rounded-2xl shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700">
+                    <h2 class="text-2xl font-bold mb-6 text-center border-b dark:border-gray-700 pb-2">Message Us</h2>
+
+                    <form id="message-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-200">Nama</label>
+                            <input type="text" id="input-name" placeholder="Nama Anda" required class="w-full mt-1 p-2 border rounded-md dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-green-500 outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Tanggal lahir</label>
+                            <input type="date" id="input-birthdate" required class="w-full mt-1 p-2 border rounded-md focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-white outline-none">
+                        </div>
+
+                        <div class="flex gap-4 py-2">
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="gender" required value="laki-laki" checked> Laki-laki
+                            </label>
+
+                            <label class="flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="gender" required value="perempuan"> Perempuan
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-200">Email</label>
+                            <input type="email" id="input-email" placeholder="Email Anda" required class="w-full mt-1 p-2 border rounded-md focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-white outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-200">Pesan</label>
+                            <textarea id="input-message" rows="4" placeholder="Tulis pesan anda disini" required class="w-full mt-1 p-2 border rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-2 focus:ring-green-500 outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition">Kirim Pesan</button>
+                        <button type="reset" class="w-full bg-red-400 text-white text-extrabold py-2 px-4 rounded-md hover:bg-gray-400 transition">Reset</button>
+                    </form>
+                </div>
+
+                <div class="p-8 border rounded-2xl bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+                    <h3 class="text-xl font-bold mb-6 text-gray-800 dark:border-gray-700 border-b pb-2">Output</h3>
+                    <div id="output-area" class="space-y-3 text-gray-700 dark:text-gray-300 italic">
+                        <p><strong>Current Time:</strong> <span id="output-time">-</span></p>
+                        <hr>
+                        <p><strong>Nama:</strong> <span id="output-name">-</span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="output-birthdate">-</span></p>
+                        <p><strong>Gender:</strong> <span id="output-gender">-</span></p>
+                        <p><strong>Email:</strong> <span id="output-email">-</span></p>
+                        <p><strong>Pesan:</strong></p>
+                        <p id="output-message" class="not-italic bg-white dark:bg-gray-700 p-3 rounded border dark:border-gray-600 shadow-sm text-gray-800 dark:text-white">Belum ada pesan</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-4 border-t text-center bg-white/90 backdrop-blur-sm dark:bg-gray-900/90 dark:border-gray-700 dark:text-white">
+        <p>&copy; 2026 Arjuna Rantau Wiratama. All rights reserved.</p>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
